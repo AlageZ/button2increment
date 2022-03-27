@@ -5,7 +5,10 @@
     --shadowcolor:hsl(var(--h),30%,65%);
     --lightcolor:hsl(var(--h),30%,75%);
 }
-
+*{
+    user-select: none;
+    touch-action: none;
+}
 #button_container,body,:root{
     user-select: none;
     height: 100vh;
