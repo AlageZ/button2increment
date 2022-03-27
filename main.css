@@ -24,10 +24,6 @@
     overflow: hidden;
     background-color: var(--backcolor);
 }
-#button_container{
-    position: absolute;
-    z-index: 2;
-}
 #button{
     text-align: center;
     color: #313131;
@@ -47,7 +43,6 @@
     -webkit-box-shadow: 2vmin 2vmin 5vmin var(--shadowcolor), -2vmin -2vmin 5vmin var(--lightcolor);
     box-shadow: 2vmin 2vmin 5vmin var(--shadowcolor), -2vmin -2vmin 5vmin var(--lightcolor);
     padding: 0;
-    z-index: 0;
 }
 #numdisp{
     text-align: center;
