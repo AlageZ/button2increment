@@ -33,8 +33,6 @@ class Random {
 
 let count = 0;
 let h = 350;
-const canvas = document.getElementById('canvas');
-const ctx = canvas.getContext('2d');
 sss.init(1)
 drawprocess()
 function drawprocess() {
