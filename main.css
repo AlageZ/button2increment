@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Quantico:wght@700&display=swap');
+
+:root{
+    --backcolor:hsl(var(--h),30%,70%);
+    --shadowcolor:hsl(var(--h),30%,65%);
+    --lightcolor:hsl(var(--h),30%,75%);
+}
+
+#button_container,body,:root{
+    user-select: none;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 2;
+    overflow: hidden;
+}
+#button_container{
+    position: absolute;
+    z-index: 2;
+    background:transparent;
+}
+#canvas{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    height: 100vmax;
+    width: 100vmax;
+    background-color: var(--backcolor);
+    z-index: 1;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    margin: auto;
+    pointer-events: none;
+}
+#button{
+    text-align: center;
+    color: #313131;
+    height: 30vmin;
+    width: 30vmin;
+    border-radius: 15vmin;
+    background-color: var(--backcolor);
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    margin: auto;
+    transform: scale(1,1);
+    transition-duration:0.4s;
+    transition-property: transform;
+    -webkit-box-shadow: 2vmin 2vmin 5vmin var(--shadowcolor), -2vmin -2vmin 5vmin var(--lightcolor);
+    box-shadow: 2vmin 2vmin 5vmin var(--shadowcolor), -2vmin -2vmin 5vmin var(--lightcolor);
+    padding: 0;
+    z-index: 0;
+}
+#numdisp{
+    text-align: center;
+    vertical-align: middle;
+    line-height: 30vmin;
+    font-family: 'Quantico', sans-serif;
+    font-size: calc(30vmin / var(--numlength));
+}
+#button:hover{
+    cursor: pointer;
+    transform:scale(1.2,1.2);
+    transition-duration:0.4s;
+    transition-property: transform;
+    transform-origin: center;
+}
+#button:active{
+    cursor: pointer;
+    transform:scale(0.9,0.9);
+    transition-duration:0.2s;
+    transition-property: transform,box-shadow,-webkit-box-shadow;
+    transform-origin: center;
+    -webkit-box-shadow: inset 2vmin 2vmin 3vmin var(--shadowcolor), inset -3vmin -3vmin 6vmin var(--lightcolor);
+    box-shadow: inset 2vmin 2vmin 3vmin var(--shadowcolor), inset -3vmin -3vmin 6vmin var(--lightcolor);
+}

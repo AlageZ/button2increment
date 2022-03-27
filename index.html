@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <style id="addstyle">
+        :root{
+            --h:350;
+            --numlength:1
+        }
+    </style>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="main.css">
+    <title>ボタンを押すと数字が増えるゲーム</title>
+</head>
+<body>
+    <canvas id="canvas">
+
+    </canvas>
+    <div id="button_container" width="10" height="10">
+        <div id="button" onclick="clicky()">
+            <div id="numdisp">0</div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/sounds-some-sounds/build/index.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
