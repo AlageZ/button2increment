@@ -4,3 +4,4 @@
 - link:https://alagez.github.io/button2increment/
 ## 使用したもの
 - https://github.com/abagames/sounds-some-sounds
+- https://fonts.google.com/specimen/Quantico
