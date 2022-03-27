@@ -52,3 +52,10 @@ function clicky(){
     count += 1
     drawprocess()
 }
+
+document.addEventListener("contextmenu",e=>{
+    e.preventDefault()
+    if (e.target.id == "button"){
+        clicky()
+    }
+})
